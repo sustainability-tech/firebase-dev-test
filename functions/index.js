@@ -12,7 +12,7 @@
 //   };
 // initializeApp(firebaseConfig)
 
-// const functions = require('firebase-functions');
+const functions = require('firebase-functions');
 // const database = getFirestore(getApp());
 
 // functions.http('add', (req, res) => {
