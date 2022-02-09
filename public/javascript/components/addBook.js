@@ -15,13 +15,13 @@ export default {
             data: {
               "author": $('#author_input').val(),
               "title": $('#title_input').val(),
-              "isbn": $('#isbn_input').val(),
-              success: function(data, status, xhr) {
-                console.log(data);
-              },
-              error: function(jqXhr, textStatus, errorMessage) {
-                console.log(errorMessage);
-              }
+              "isbn": $('#isbn_input').val()
+            },
+            success: function(data, status, xhr) {
+              console.log(data);
+            },
+            error: function(jqXhr, textStatus, errorMessage) {
+              console.log(errorMessage);
             }
           });
         }
