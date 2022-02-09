@@ -10,7 +10,11 @@ export default update => html`
 <nav>
   <ul>
     ${items.map(item => html.for(item)`
-      <li><a onclick="${ () => update(item.url) }">${ item.label }</li>
+      <li><a onclick="${ (ev) => {
+        $('.active').removeClass('active');
+        $(ev.srcElement).addClass('active');
+        update(item.url);
+      }}">${ item.label }</li>
     `)}
   </ul>
 </nav>

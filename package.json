@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  },
+  "dependencies": {
+    "firebase-tools": "^10.1.5"
+  }
+}
