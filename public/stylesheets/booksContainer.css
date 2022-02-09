@@ -1,0 +1,20 @@
+.booksContainer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.booksContainer li {
+  border-top: 1px dashed #ccc;
+  padding: 10px 0;
+}
+.booksContainer h1,
+.booksContainer p {
+  margin: 0;
+}
+.booksContainer h1 {
+  font-size: 1.3rem;
+}
+.booksContainer img {
+  float: left;
+  margin-right: 10px;
+}

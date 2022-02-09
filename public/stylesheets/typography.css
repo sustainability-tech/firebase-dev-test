@@ -1,0 +1,40 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: #333;
+}
+a:hover,
+a:visited,
+a:active,
+a {
+  color: #7687E4;
+  text-decoration: none;
+  cursor: pointer;
+}
+h1, h2, h3, h4, p {
+  margin: 0 0 15px 0;
+}
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+h1 {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}

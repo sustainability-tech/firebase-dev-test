@@ -1,0 +1,23 @@
+{
+  "name": "stravamap",
+  "version": "1.0.0",
+  "description": "Generate nice maps based on Strava input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braadworst/stravamap.git"
+  },
+  "author": "Roy Niels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braadworst/stravamap/issues"
+  },
+  "homepage": "https://github.com/braadworst/stravamap#readme",
+  "devDependencies": {
+    "firebase": "^9.6.5",
+    "uhtml": "^2.8.0"
+  }
+}
