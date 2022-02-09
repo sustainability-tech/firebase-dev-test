@@ -16,7 +16,7 @@
 // const database = getFirestore(getApp());
 
 // functions.http('add', (req, res) => {
-//     database.collection('books').add({
+//     await database.collection('books').add({
 //         author: req.body.author,
 //         title: req.body.title,
 //         isbn: `https://covers.openlibrary.org/b/isbn/${ req.body.isbn }-S.jpg`
