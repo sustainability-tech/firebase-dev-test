@@ -20,7 +20,6 @@
 //         author: req.body.author,
 //         title: req.body.title,
 //         isbn: `https://covers.openlibrary.org/b/isbn/${ req.body.isbn }-S.jpg`
-
 //     });
 //     res.send(`Success`);
 // });
