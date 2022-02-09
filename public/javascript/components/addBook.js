@@ -8,10 +8,11 @@ export default {
       ${ menu(update) }
       <h1>Add Book</h1>
       <form onsubmit="${
-        () => {
+        (e) => {
+          e.preventDefault();
           $.ajax({
             type: "POST",
-            url: "localhost:5001/add",
+            url: "http://localhost:5001/firebase-dev-test-123/us-central1/addbook",
             data: {
               "author": $('#author_input').val(),
               "title": $('#title_input').val(),
