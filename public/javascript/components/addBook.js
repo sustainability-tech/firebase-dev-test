@@ -13,9 +13,9 @@ export default {
             type: "POST",
             url: "localhost:5001/add",
             data: {
-              "author": $(author_input).val(),
-              "title": $(title_input).val(),
-              "isbn": $(isbn_input).val(),
+              "author": $('#author_input').val(),
+              "title": $('#title_input').val(),
+              "isbn": $('#isbn_input').val(),
               success: function(data, status, xhr) {
                 console.log(data);
               },
