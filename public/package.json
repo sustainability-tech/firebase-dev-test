@@ -19,5 +19,8 @@
   "devDependencies": {
     "firebase": "^9.6.5",
     "uhtml": "^2.8.0"
+  },
+  "dependencies": {
+    "snowpack": "^3.8.8"
   }
 }
