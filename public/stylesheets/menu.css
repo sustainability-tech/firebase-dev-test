@@ -18,3 +18,9 @@ nav ul li:first-child a {
 nav ul li:last-child a {
   border-radius: 0 15px 15px 0;
 }
+.selected-menu {
+  border: 1px solid #ccc;
+  border-width: 1px 1px 1px 0;
+  padding: 10px;
+  background-color: bisque;
+}
