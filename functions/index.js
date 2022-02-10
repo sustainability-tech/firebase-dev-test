@@ -1,4 +1,3 @@
-// Create cloud function to convert the ISBN number to a link and save it in the database
 import admin from 'firebase-admin';
 import functions from 'firebase-functions';
 
@@ -33,6 +32,11 @@ export const saveBook = functions.https.onRequest(async (req, res) => {
     }
     const bookResult = await admin.firestore().collection('books').add(newBook);
     const bookId = bookResult.id;
-    const messageResult = `{id:${bookId}, url:${url}}`;
+    const messageResult = `{"id":"${bookId}", "url":"${url}"}`;
+
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization');
+    res.set('Access-Control-Expose-Headers', 'Content-Length,Content-Range');
     res.status(200).send(messageResult);
 });
