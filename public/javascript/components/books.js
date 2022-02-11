@@ -18,7 +18,7 @@ export default {
         const url = `https://covers.openlibrary.org/b/isbn/${ item.data().isbn }-S.jpg`;
         return html`<img src="${ url }" />`;
       }
-      return '';
+      return html`<img src="/stylesheets/assets/picture-unavailable.jpg" width="38" height="58"/>`;
     }
 
     if (!books.empty) {
