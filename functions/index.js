@@ -13,9 +13,19 @@ const firebaseConfig = {
 admin.initializeApp(firebaseConfig);
 const db = admin.firestore();
 
-export const addbook = functions.https.onRequest(async (req, res) => {
-    await db.collection('books').add(req.body);
-    res.set('Access-Control-Allow-Origin', '*');
-    res.status(200).send(`{status:"success", url:"https://covers.openlibrary.org/b/isbn/${req.body.isbn}-S.jpg"}`);
-    return "";
+export const book = functions.https.onRequest(async (req, res) => {
+  switch(req.method) {
+    case 'GET':
+      res.status(403).send('Forbidden!');
+      break;
+    case 'POST':
+      await db.collection('books').add(req.body);
+      res.set('Access-Control-Allow-Origin', '*');
+      res.status(200).send(`{status:"success", url:"https://covers.openlibrary.org/b/isbn/${req.body.isbn}-S.jpg"}`);
+      break;
+    default:
+      res.status(405).send({error: 'Method not allowed'});
+      break;
+  }
+  return "";
 });

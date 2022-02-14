@@ -12,7 +12,7 @@ export default {
           e.preventDefault();
           $.ajax({
             type: "POST",
-            url: "http://localhost:5001/firebase-dev-test-123/us-central1/addbook",
+            url: "http://localhost:5001/firebase-dev-test-123/us-central1/book",
             data: {
               "author": $('#author_input').val(),
               "title": $('#title_input').val(),
