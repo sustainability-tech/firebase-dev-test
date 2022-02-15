@@ -80,3 +80,7 @@ select:disabled,
 input[readonly] {
   color: #999;
 }
+
+#submit_button {
+  margin-top: 10px;
+}
